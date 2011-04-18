@@ -7,7 +7,11 @@ CLI for Pivotal Tracker
 Examples
 --------
 
-    `pivotcli -s started -p your_project -o 'Your Name' -t 'token' `
+Add this to your ~/.pivotcli.yml
+
+    token: 'your-pivotal-token'
+
+    pivotcli -s started -p your_project -o 'Your Name' -t 'token'
 
 Requirements
 ------------
@@ -23,7 +27,6 @@ Install
 TODO
 -------
 
-* Add yml config to HOME directory for token
 * Include full support for other `pivotal_tracker` features
 * Add testing
 

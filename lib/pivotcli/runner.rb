@@ -10,6 +10,10 @@ class Runner
     @state = options[:state]
     @token = options[:token]
 
+    if @token.nil?
+      load_config
+    end
+
     @pt_client = PivotalTracker::Client.token = @token
 
     @projects = PivotalTracker::Project.all
@@ -28,6 +32,13 @@ class Runner
     @project.stories.all(:current_state => @state, :owned_by => @owner).each do |story|
       puts "#{story.id.to_s.red} | #{story.name}"
     end
+  end
+
+  private
+
+  def load_config
+    config = YAML.load_file("#{ENV['HOME']}/.pivotcli.yml")
+    @token = config['token']
   end
 
 end
