@@ -11,6 +11,8 @@ Add this to your ~/.pivotcli.yml
 
     token: 'your-pivotal-token'
 
+Run this in your Terminal
+
     pivotcli -s started -p your_project -o 'Your Name' -t 'token'
 
 Requirements
