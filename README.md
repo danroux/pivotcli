@@ -20,6 +20,13 @@ Install
 
 * gem install pivotcli
 
+TODO
+-------
+
+* Add yml config to HOME directory for token
+* Include full support for other `pivotal_tracker` features
+* Add testing
+
 Author
 ------
 
