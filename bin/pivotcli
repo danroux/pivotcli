@@ -1,0 +1,60 @@
+#!/usr/bin/env ruby
+
+require File.expand_path(
+  File.join(File.dirname(__FILE__), %w[.. lib pivotcli]))
+  require "choice"
+
+  PRlGRAM_VERSION = 1
+
+  Choice.options do
+    header ''
+    header 'Specific options:'
+
+    option :project do
+      short '-p'
+      long '--project=PROJECT'
+      desc 'The Project Name'
+      default 'Shwinkers Mobile'
+    end
+
+    option :owner do
+      short '-o'
+      long '--owner=OWNER'
+      desc 'The owner of the story'
+      default 'Julius Francisco'
+    end
+
+    option :state do
+      short '-s'
+      long '--state=STATE'
+      desc 'State of the stories (started, unstarted, finished, delivered, accepted)'
+      default 'unstarted'
+    end
+
+    option :token do
+      short '-t'
+      long '--token=TOKEN'
+      desc 'Token from Pivotal Tracker'
+    end
+
+    separator ''
+    separator 'Common options: '
+
+    option :help do
+      long '--help'
+      desc 'Show this message'
+    end
+
+    option :version do
+      short '-v'
+      long '--version'
+      desc 'Show version'
+    end
+  end
+
+  runner = Runner.new(:project => Choice.choices[:project], 
+                      :owner => Choice.choices[:owner],
+                      :token => Choice.choices[:token],
+                      :state => Choice.choices[:state])
+
+  runner.get_stories
