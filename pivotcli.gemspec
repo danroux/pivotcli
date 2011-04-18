@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ["Julius F"]
   s.date = %q{2011-04-19}
   s.default_executable = %q{pivotcli}
-  s.description = %q{FIXME (describe your package)}
+  s.description = %q{CLI for Pivotal Tracker}
   s.email = %q{baldrailers@gmail.com}
   s.executables = ["pivotcli"]
   s.extra_rdoc_files = ["History.txt", "bin/pivotcli"]
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{pivotcli}
   s.rubygems_version = %q{1.6.2}
-  s.summary = %q{FIXME (describe your package)}
+  s.summary = %q{CLI for Pivotal Tracker}
   s.test_files = ["test/test_pivotcli.rb"]
 
   if s.respond_to? :specification_version then

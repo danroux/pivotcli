@@ -14,14 +14,14 @@ require File.expand_path(
       short '-p'
       long '--project=PROJECT'
       desc 'The Project Name'
-      default 'Shwinkers Mobile'
+      default 'Your Project Name'
     end
 
     option :owner do
       short '-o'
       long '--owner=OWNER'
       desc 'The owner of the story'
-      default 'Julius Francisco'
+      default 'Story Owner'
     end
 
     option :state do

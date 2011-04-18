@@ -1,44 +1,37 @@
 pivotcli
 ===========
 
-FIXME (describe your package)
+CLI for Pivotal Tracker
 
-Features
---------
-
-* FIXME (list of features and unsolved problems)
 
 Examples
 --------
 
-    FIXME (code sample of usage)
+    `pivotcli -s started -p your_project -o 'Your Name' -t 'token' `
 
 Requirements
 ------------
 
-* FIXME (list of requirements)
+* pivotal_tracker
+* colored
 
 Install
 -------
 
-* FIXME (sudo gem install, anything else)
+* gem install pivotcli
 
 Author
 ------
 
-Original author: FIXME (author's name)
+Original author: Julius F
 
-Contributors:
-
-* FIXME (contributor 1?)
-* FIXME (contributor 2?)
 
 License
 -------
 
-(The MIT License) FIXME (different license?)
+The MIT License
 
-Copyright (c) 2011 FIXME (author's name)
+Copyright (c) Julius F
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
