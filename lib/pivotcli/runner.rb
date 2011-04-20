@@ -15,6 +15,7 @@ class Runner
     end
 
     @pt_client = PivotalTracker::Client.token = @token
+    @pt_client = PivotalTracker::Client.use_ssl = @ssl
 
     @projects = PivotalTracker::Project.all
 
@@ -39,6 +40,7 @@ class Runner
   def load_config
     config = YAML.load_file("#{ENV['HOME']}/.pivotcli.yml")
     @token = config['token']
+    @ssl = config['ssl']
   end
 
 end

@@ -2,23 +2,22 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pivotcli}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Julius F"]
-  s.date = %q{2011-04-19}
-  s.default_executable = %q{pivotcli}
-  s.description = %q{CLI for Pivotal Tracker}
+  s.date = %q{2011-04-20}
+  s.description = %q{CLI for Pivotal Tracker powered by pivotal_tracker: jsmestad/pivotal-tracker}
   s.email = %q{baldrailers@gmail.com}
   s.executables = ["pivotcli"]
   s.extra_rdoc_files = ["History.txt", "bin/pivotcli"]
-  s.files = ["History.txt", "README.md", "Rakefile", "bin/pivotcli", "lib/pivotcli.rb", "lib/pivotcli/runner.rb", "pivotcli.gemspec", "spec/pivotcli_spec.rb", "spec/spec_helper.rb", "test/test_pivotcli.rb", "version.txt"]
+  s.files = [".bnsignore", ".gitignore", "History.txt", "NERD_tree_1", "README.md", "Rakefile", "bin/pivotcli", "lib/pivotcli.rb", "lib/pivotcli/runner.rb", "pivotcli.gemspec", "spec/pivotcli_spec.rb", "spec/spec_helper.rb", "test/test_pivotcli.rb", "version.txt"]
   s.homepage = %q{http://julius.weekendhack.in}
   s.rdoc_options = ["--main", "README.md"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{pivotcli}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{CLI for Pivotal Tracker}
+  s.rubygems_version = %q{1.7.2}
+  s.summary = %q{CLI for Pivotal Tracker powered by pivotal_tracker: jsmestad/pivotal-tracker}
   s.test_files = ["test/test_pivotcli.rb"]
 
   if s.respond_to? :specification_version then

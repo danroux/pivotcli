@@ -1,7 +1,7 @@
 pivotcli
 ===========
 
-CLI for Pivotal Tracker
+CLI for Pivotal Tracker powered by pivotal_tracker: jsmestad/pivotal-tracker
 
 
 Examples
@@ -10,6 +10,7 @@ Examples
 Add this to your ~/.pivotcli.yml
 
     token: 'your-pivotal-token'
+    ssl: true
 
 Run this in your Terminal
 
